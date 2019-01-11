@@ -1,0 +1,16 @@
+<h1>Counted</h1>
+<a href="{% url 'home' %}">Back to Homepage</a>
+<h2>Your text is : </h2>
+{{data}}
+<br>
+<br>
+<h2>Counted Words:</h2>
+Number of words = {{alp}}
+<br>
+
+<h2>how many times word will appear in your text</h2>
+<br>
+{% for key,val in worddictionary  %}
+{{key}} = {{val}}
+<br>
+{% endfor %}
